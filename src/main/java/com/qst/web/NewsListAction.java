@@ -20,8 +20,7 @@ import java.util.stream.Collectors;
 
 @WebServlet(value = "/MilitaryNews", initParams = {
         @WebInitParam(name = "httpUrl", value = "https://api.tianapi.com/military/index"),
-//        @WebInitParam(name = "httpUrl", value = "https://apis.tianapi.com/military/index"),
-        @WebInitParam(name = "key", value = "7c90b9a18796547b10fbed288e55fad1"),
+        @WebInitParam(name = "key", value = "这里填自己的密钥"),
         @WebInitParam(name = "num", value = "6")
 
 })
@@ -53,6 +52,6 @@ public class NewsListAction extends HttpServlet {
         req.setAttribute("newsList", newsList);
         //转向到newspage页面,在页面上呈现新闻列表
         this.getServletContext().getRequestDispatcher("/newspage.jsp")
-                .forward(req, resp);
+                。forward(req, resp);
     }
 }
