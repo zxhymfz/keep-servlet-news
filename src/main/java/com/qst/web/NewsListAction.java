@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
 
 @WebServlet(value = "/MilitaryNews", initParams = {
         @WebInitParam(name = "httpUrl", value = "https://api.tianapi.com/military/index"),
-        @WebInitParam(name = "key", value = "这里填自己的密钥"),
+        @WebInitParam(name = "key", value = "这里填自己的key"),
         @WebInitParam(name = "num", value = "6")
 
 })
