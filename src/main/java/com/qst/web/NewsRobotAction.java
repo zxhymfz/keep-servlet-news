@@ -19,8 +19,7 @@ import java.util.stream.Collectors;
 
 @WebServlet(value = "/newsrobot", initParams = {
         @WebInitParam(name = "httpUrl", value = "http://api.tianapi.com/military/index"),
-//        @WebInitParam(name = "httpUrl", value = "https://apis.tianapi.com/military/index"),
-        @WebInitParam(name = "key", value = "7c90b9a18796547b10fbed288e55fad1"),
+        @WebInitParam(name = "key", value = "这里填自己的key"),
         @WebInitParam(name = "num", value = "6")
 
 })
@@ -53,7 +52,7 @@ public class NewsRobotAction extends HttpServlet {
         List<News> newsList = NewTools.URLcoding(jsonResult);
         req.setAttribute("newsList", newsList);
         this.getServletContext().getRequestDispatcher("/newspage.jsp")
-                .forward(req, resp);
+                。forward(req, resp);
         page=(page+1)%5;
     }
 }
