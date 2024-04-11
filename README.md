@@ -1,7 +1,7 @@
 # keep-servlet-news
 
 大二上学期-期末项目-公共新闻机器人   
-使用IDEA，基于天行API旧接口编写    
+使用IDEA，基于天行API旧接口编写   
   ![image](https://github.com/zxhymfz/keep-servlet-news/assets/83580937/05416a61-32c1-4b7d-b9ae-2864ff38452e)
 
 
